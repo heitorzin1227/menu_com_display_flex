@@ -1,52 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACME LTDA | Contato</title>
+    <title>NexaTech - Contato</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="nav">
-        <div class="logo">ACME LTDA</div>
+    <header>
+        <div class="container">
+            <h1 class="logo">NexaTech</h1>
 
-        <ul class="menu">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <main class="container">
+    <main>
 
-        <section class="pagina">
-            <h1>Entre em contato</h1>
+        <section class="pagina container">
+            <h2>Entre em contato</h2>
 
             <p>
-                Preencha o formulário abaixo para
-                entrar em contato conosco.
+                Tem alguma dúvida ou deseja conhecer nossos serviços?
+                Envie uma mensagem através do formulário.
             </p>
+
+            <div class="contato-info">
+                <p><strong>E-mail:</strong> contato@nexatech.com</p>
+                <p><strong>Telefone:</strong> (27) 99999-9999</p>
+                <p><strong>Endereço:</strong> Avenida da Tecnologia, 100 - Vitória/ES</p>
+            </div>
         </section>
 
-        <form class="formulario">
+        <section class="formulario container">
 
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" placeholder="Digite seu nome">
+            <form>
 
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="Digite seu e-mail">
+                <label for="nome">Nome</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
 
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" placeholder="Digite sua mensagem"></textarea>
+                <label for="email">E-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
 
-            <button type="submit">Enviar</button>
+                <label for="assunto">Assunto</label>
+                <input
+                    type="text"
+                    id="assunto"
+                    name="assunto"
+                    placeholder="Digite o assunto"
+                    required
+                >
 
-        </form>
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="6"
+                    placeholder="Digite sua mensagem"
+                    required
+                ></textarea>
+
+                <button type="submit">Enviar mensagem</button>
+
+            </form>
+
+        </section>
 
     </main>
+
+    <footer>
+        <p>&copy; 2026 NexaTech. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
